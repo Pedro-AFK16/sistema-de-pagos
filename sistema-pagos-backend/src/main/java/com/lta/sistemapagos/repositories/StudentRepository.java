@@ -9,7 +9,7 @@ import com.lta.sistemapagos.entities.Student;
 
 @Repository
 public interface StudentRepository extends JpaRepository<Student, String> {
-    Student findByStudent(String codigo);
+    Student findByCodigo(String codigo);
 
     List<Student> findByProgramaId(String programaId);
 }
